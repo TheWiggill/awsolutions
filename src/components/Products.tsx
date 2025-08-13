@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     name: 'NP50 Stash 4',
     price: '$499',
-    image: '/images/placeholder-product-2.svg',
+    image: '/images/Stash4.png',
     description: 'Mid-range powerhouse with enhanced capacity and advanced features. Ideal for growing businesses that need scalable solutions.'
   },
   {
