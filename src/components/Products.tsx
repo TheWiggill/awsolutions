@@ -15,13 +15,13 @@ const products: Product[] = [
     description: 'Compact and efficient solution for small-scale operations. Perfect for getting started with reliable performance and easy setup.'
   },
   {
-    name: 'NP50 Stash 4',
+    name: 'NP-50 Stash 4',
     price: '$30 CAD',
     image: '/images/Stash4.jpg',
     description: 'Mid-range powerhouse with enhanced capacity and advanced features. Ideal for growing businesses that need scalable solutions.'
   },
   {
-    name: 'NP50 Stash 8',
+    name: 'NP-50 Stash 8',
     price: '$40 CAD',
     image: '/images/Stash8.jpg',
     description: 'Premium high-capacity system with maximum performance and enterprise-grade reliability. Built for demanding professional environments.'
