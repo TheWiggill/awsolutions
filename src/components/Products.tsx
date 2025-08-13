@@ -10,19 +10,19 @@ interface Product {
 const products: Product[] = [
   {
     name: 'NP-50 Stash 2',
-    price: '$299',
+    price: '$20 CAD',
     image: '/images/Stash2.jpg',
     description: 'Compact and efficient solution for small-scale operations. Perfect for getting started with reliable performance and easy setup.'
   },
   {
     name: 'NP50 Stash 4',
-    price: '$499',
+    price: '$30 CAD',
     image: '/images/Stash4.jpg',
     description: 'Mid-range powerhouse with enhanced capacity and advanced features. Ideal for growing businesses that need scalable solutions.'
   },
   {
     name: 'NP50 Stash 8',
-    price: '$799',
+    price: '$40 CAD',
     image: '/images/Stash8.jpg',
     description: 'Premium high-capacity system with maximum performance and enterprise-grade reliability. Built for demanding professional environments.'
   }
