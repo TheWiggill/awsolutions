@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-dark {
+    background: radial-gradient(circle at 50% 120%, #1a472a 0%, #000000 100%);
+  }
+}
