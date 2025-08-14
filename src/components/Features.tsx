@@ -20,7 +20,7 @@ export function Features() {
         <FeatureCard
           Icon={WrenchIcon}
           title="Tech Support"
-          description="Expert technical support for computers, networks, household electronics, and more"
+          description="Expert technical support for:\n• Computers\n• Networks\n• Household Electronics\n• Much More"
         />
         <FeatureCard
           Icon={FileText}
