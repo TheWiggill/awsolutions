@@ -51,6 +51,11 @@ export function Products() {
             </div>
           ))}
         </div>
+        <div className="text-center mt-12">
+          <p className="text-emerald-400 text-lg">
+            Please contact me to place an order
+          </p>
+        </div>
       </div>
     </div>
   );
