@@ -12,19 +12,19 @@ const products: Product[] = [
     name: 'NP-50 Stash 2',
     price: '$20 CAD',
     image: '/images/Stash2.jpg',
-    description: 'Compact solution for storage of 2x NP-50 batteries.'
+    description: 'Storage for 2 NP-50 batteries.'
   },
   {
     name: 'NP-50 Stash 4',
     price: '$30 CAD',
     image: '/images/Stash4.jpg',
-    description: 'Storage for 4x NP-50 batteries.'
+    description: 'Storage for 4 NP-50 batteries.'
   },
   {
     name: 'NP-50 Stash 8',
     price: '$40 CAD',
     image: '/images/Stash8.jpg',
-    description: 'Storage for 8x NP-50 batteries'
+    description: 'Storage for 8 NP-50 batteries'
   }
 ];
 
