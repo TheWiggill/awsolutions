@@ -14,7 +14,11 @@ export function FeatureCard({ Icon, title, description }: FeatureCardProps) {
         <Icon className="w-6 h-6 text-emerald-400" />
       </div>
       <h3 className="text-xl font-semibold text-white mb-4">{title}</h3>
-      <p className="text-gray-400">{description}</p>
+      <div className="text-gray-400">
+        {description.split('\n').map((line, index) => (
+          <div key={index}>{line}</div>
+        ))}
+      </div>
     </div>
   );
 }
