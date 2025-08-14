@@ -12,10 +12,42 @@ export function Contact() {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setSubmitError(null);
+    setSubmitSuccess(false);
+    setIsSubmitting(true);
+
+    try {
+      const formElement = e.currentTarget;
+      const submissionData = new FormData(formElement);
+      submissionData.append('access_key', 'c1645eab-c2e9-4bb4-96fb-0a3be1b5e691');
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: submissionData
+      });
+
+      const data: any = await response.json();
+
+      if (data?.success) {
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+        formElement.reset();
+        return;
+      }
+
+      const message = data?.message || 'Something went wrong. Please try again later.';
+      throw new Error(message);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : 'Failed to send message.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -29,7 +61,7 @@ export function Contact() {
     <div id="contact" className="bg-black py-24 px-4">
       <div className="max-w-md mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4" noValidate>
           <input
             type="text"
             name="name"
@@ -59,10 +91,17 @@ export function Contact() {
           />
           <button
             type="submit"
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg transition-all"
+            disabled={isSubmitting}
+            className="w-full bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 disabled:cursor-not-allowed text-white px-8 py-3 rounded-lg transition-all"
           >
-            Send Message
+            {isSubmitting ? 'Sending…' : 'Send Message'}
           </button>
+          {submitSuccess && (
+            <div className="text-emerald-400 text-sm">Thanks! Your message has been sent.</div>
+          )}
+          {submitError && (
+            <div className="text-red-400 text-sm">{submitError}</div>
+          )}
         </form>
       </div>
     </div>
