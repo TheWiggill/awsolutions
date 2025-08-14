@@ -10,7 +10,7 @@ export function Features() {
         <FeatureCard
           Icon={Paintbrush}
           title="Design"
-          description="Creative and intuitive designs that bring your vision to life"
+          description="Creative and intuitive design assistance to bring your vision to life"
         />
         <FeatureCard
           Icon={Lightbulb}
@@ -24,8 +24,8 @@ export function Features() {
         />
         <FeatureCard
           Icon={Car}
-          title="Ozone Generator"
-          description="Ozone generator rental to remove odors from your property or vehicle."
+          title="Rentals"
+          description="Equipment rentals t"
         />
       </div>
     </div>
