@@ -24,8 +24,8 @@ export function Features() {
         />
         <FeatureCard
           Icon={Car}
-          title="Rentals"
-          description="Flexible equipment rental solutions for your projects"
+          title="Ozone Generator"
+          description="Ozone Generator Rental to remove odors from your property or vehicle."
         />
       </div>
     </div>
