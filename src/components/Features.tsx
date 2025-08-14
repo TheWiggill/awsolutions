@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paintbrush, Lightbulb, WrenchIcon, Car } from 'lucide-react';
+import { Paintbrush, Lightbulb, WrenchIcon, FileText } from 'lucide-react';
 import { FeatureCard } from './FeatureCard';
 
 export function Features() {
@@ -23,7 +23,7 @@ export function Features() {
           description="Expert technical support"
         />
         <FeatureCard
-          Icon={Car}
+          Icon={FileText}
           title="Rentals"
           description="Equipment rentals (currently only ozone generators)"
         />
