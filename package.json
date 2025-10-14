@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MrWiggill.github.io/awsolutions/",
+  "homepage": "https://TheWiggill.github.io/agwindustries/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

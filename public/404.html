@@ -8,16 +8,27 @@
       // https://github.com/rafgraph/spa-github-pages
       var pathSegmentsToKeep = 1;
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        '/awsolutions/' + '?/' +
-        l.pathname.slice('/awsolutions/'.length).replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      
+      // Check if we're on the correct base path
+      if (l.pathname.startsWith('/agwindustries/')) {
+        // We're on the correct path, just redirect to index
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/agwindustries/' + '?/' +
+          l.pathname.slice('/agwindustries/'.length).replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      } else {
+        // We're not on the correct path, redirect to base
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/agwindustries/'
+        );
+      }
     </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="/awsolutions/">link</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="/agwindustries/">link</a>.</p>
   </body>
 </html>

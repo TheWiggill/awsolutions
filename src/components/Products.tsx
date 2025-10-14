@@ -14,19 +14,25 @@ const products: Product[] = [
     name: 'NP-50 Stash 2',
     price: '$20 CAD',
     image: `${baseUrl}images/Stash2.jpg`,
-    description: 'Storage for 2 NP-50 batteries. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
+    description: 'Storage for 2 NP-50 batteries made of flexible material. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
   },
   {
     name: 'NP-50 Stash 4',
     price: '$30 CAD',
     image: `${baseUrl}images/Stash4.jpg`,
-    description: 'Storage for 4 NP-50 batteries. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
+    description: 'Storage for 4 NP-50 batteries made of flexible material. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
   },
   {
     name: 'NP-50 Stash 8',
     price: '$40 CAD',
     image: `${baseUrl}images/Stash8.jpg`,
-    description: 'Storage for 8 NP-50 batteries. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
+    description: 'Storage for 8 NP-50 batteries made of flexible material. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
+  },
+  {
+    name: 'Baofeng UV-16 V2 Pro',
+    price: '$80 CAD',
+    image: `${baseUrl}images/baofeng.jpg`,
+    description: 'USB-C Charging, Waterproof, Programmed to include ALL channels that you need, including RR, Load, Ladd, BCA, FRS/GMRS, Canadian Weather, and more. FM Radio and Flashlight functionality. Dock charger, USB C Cable, Antenna, and belt clip included.'
   }
 ];
 
