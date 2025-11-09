@@ -1,8 +1,6 @@
 import React from 'react';
 import { Zap, Clock, Shield, CheckCircle, ArrowRight } from 'lucide-react';
 
-const baseUrl = import.meta.env.BASE_URL;
-
 export function Rentals() {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -110,7 +108,7 @@ export function Rentals() {
             {/* Ozone Generator Image */}
             <div className="mt-8 text-center">
               <img 
-                src={`${baseUrl}images/Ozone.png`}
+                src="/awsolutions/images/Ozone.png" 
                 alt="Ozone Generator" 
                 className="w-48 h-auto mx-auto rounded-2xl border border-emerald-900/30"
               />

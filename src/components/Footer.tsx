@@ -1,11 +1,9 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
 
-const baseUrl = import.meta.env.BASE_URL;
-
 const CanadianFlag = () => (
   <img 
-    src={`${baseUrl}images/Flag_of_Canada.svg`}
+    src="/awsolutions/images/Flag_of_Canada.svg" 
     alt="Canadian Flag" 
     width="24" 
     height="16" 
