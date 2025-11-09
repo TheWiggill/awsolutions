@@ -8,6 +8,7 @@
       // https://github.com/rafgraph/spa-github-pages
       var pathSegmentsToKeep = 1;
       var l = window.location;
+<<<<<<< HEAD
       
       // Check if we're on the correct base path
       if (l.pathname.startsWith('/awsolutions/')) {
@@ -26,6 +27,15 @@
           '/awsolutions/'
         );
       }
+=======
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/awsolutions/' + '?/' +
+        l.pathname.slice('/awsolutions/'.length).replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
     </script>
   </head>
   <body>

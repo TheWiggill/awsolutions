@@ -28,6 +28,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#1a472a_0%,#000000_100%)] opacity-90"></div>
       
       <div className="relative z-10 text-center px-4">
+<<<<<<< HEAD
         <div className="flex flex-col items-start justify-center gap-4 mb-4 md:flex-row md:items-center md:justify-center">
           <img 
             src="images/sidehectortrans.png" 
@@ -41,6 +42,11 @@ export function Hero() {
         <p className="text-lg md:text-xl font-bold text-white mb-3 tracking-wide">
           Design • Manufacturing • Tech • Rentals
         </p>
+=======
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
+          AW Solutions
+        </h1>
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
         <p className="text-xl md:text-2xl text-emerald-400 mb-8">
           Let's make it happen
         </p>
@@ -67,6 +73,7 @@ export function Hero() {
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
+<<<<<<< HEAD
 
         {/* Proudly Canadian Section */}
         <div className="text-center mt-8">
@@ -87,6 +94,8 @@ export function Hero() {
             <span>Kelowna, BC</span>
           </div>
         </div>
+=======
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
       </div>
 
       {/* Grid pattern overlay */}

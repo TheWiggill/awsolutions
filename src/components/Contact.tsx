@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 interface FormData {
   name: string;
   email: string;
-  phone: string;
   message: string;
 }
 
@@ -11,7 +10,6 @@ export function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    phone: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,7 +36,7 @@ export function Contact() {
 
       if (data?.success) {
         setSubmitSuccess(true);
-        setFormData({ name: '', email: '', phone: '', message: '' });
+        setFormData({ name: '', email: '', message: '' });
         formElement.reset();
         return;
       }
@@ -63,9 +61,6 @@ export function Contact() {
     <div id="contact" className="bg-black py-24 px-4">
       <div className="max-w-md mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>
-        <p className="text-emerald-400 text-lg mb-8 max-w-2xl mx-auto">
-          Contact me to place an order, organize a rental, receive a quote for design and manufacturing of your products, or for tech support!
-        </p>
         <form onSubmit={handleSubmit} className="space-y-4" noValidate>
           <input
             type="text"
@@ -84,14 +79,6 @@ export function Contact() {
             placeholder="Your email"
             className="w-full px-4 py-3 rounded-lg bg-emerald-900/20 border border-emerald-900/30 text-white placeholder-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             required
-          />
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="Your phone number"
-            className="w-full px-4 py-3 rounded-lg bg-emerald-900/20 border border-emerald-900/30 text-white placeholder-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-600"
           />
           <textarea
             name="message"

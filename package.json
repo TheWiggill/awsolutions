@@ -3,7 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+<<<<<<< HEAD
   "homepage": "https://TheWiggill.github.io/awsolutions/",
+=======
+  "homepage": "https://MrWiggill.github.io/awsolutions/",
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
   "scripts": {
     "dev": "vite",
     "build": "vite build",
