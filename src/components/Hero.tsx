@@ -1,6 +1,8 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export function Hero() {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -30,12 +32,12 @@ export function Hero() {
       <div className="relative z-10 text-center px-4">
         <div className="flex flex-col items-start justify-center gap-4 mb-4 md:flex-row md:items-center md:justify-center">
           <img 
-            src="images/sidehectortrans.png" 
-            alt="AGW Industries Logo" 
+            src={`${baseUrl}images/sidehectortrans.png`}
+            alt="Hector Solutions Logo" 
             className="w-32 h-32 md:w-40 md:h-40"
           />
           <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight font-ancizar-serif text-left md:text-center">
-            AGW INDUSTRIES
+            HECTOR SOLUTIONS
           </h1>
         </div>
         <p className="text-lg md:text-xl font-bold text-white mb-3 tracking-wide">
@@ -72,7 +74,7 @@ export function Hero() {
         <div className="text-center mt-8">
           <div className="flex items-center justify-center gap-2 text-emerald-400 mb-2">
             <img 
-              src="/agwindustries/images/Flag_of_Canada.svg" 
+              src={`${baseUrl}images/Flag_of_Canada.svg`}
               alt="Canadian Flag" 
               width="24" 
               height="16" 
