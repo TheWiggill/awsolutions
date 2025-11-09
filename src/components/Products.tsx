@@ -26,6 +26,7 @@ const audioGear: Product[] = [
     price: '$40 CAD',
     image: `${baseUrl}images/Stash8.jpg`,
 <<<<<<< HEAD
+<<<<<<< HEAD
     description: 'Storage for 8 NP-50 batteries made of flexible material. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
   }
 ];
@@ -42,6 +43,9 @@ const radios: Product[] = [
     price: '$60 CAD',
     image: `${baseUrl}images/5rmini.jpg`,
     description: 'Compact dual-band radio with VHF/UHF/Air Band capabilities. Programmed to include ALL channels that you need, including RR, Load, Ladd, BCA, FRS/GMRS, Canadian Weather, and more. Includes battery, antenna, USB-C charging cable, and belt clip.'
+=======
+    description: 'Storage for 8 NP-50 batteries. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
 =======
     description: 'Storage for 8 NP-50 batteries. Also compatible with D-Li68 / D-Li122 / Klic-7004 / LB-50'
 >>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)

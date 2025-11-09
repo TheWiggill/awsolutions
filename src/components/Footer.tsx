@@ -3,6 +3,7 @@ import { MapPin } from 'lucide-react';
 
 const CanadianFlag = () => (
 <<<<<<< HEAD
+<<<<<<< HEAD
   <img 
     src="/awsolutions/images/Flag_of_Canada.svg" 
     alt="Canadian Flag" 
@@ -11,11 +12,16 @@ const CanadianFlag = () => (
     className="inline-block"
   />
 =======
+=======
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
   <svg width="20" height="15" viewBox="0 0 20 15" className="inline-block">
     <rect width="20" height="15" fill="#FF0000"/>
     <rect x="6" y="0" width="8" height="15" fill="#FFFFFF"/>
     <path d="M10 3L11 6H14L11.5 8L12.5 11L10 9L7.5 11L8.5 8L6 6H9L10 3Z" fill="#FF0000"/>
   </svg>
+<<<<<<< HEAD
+>>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
+=======
 >>>>>>> parent of add9b12 (Rebrand from AW Solutions to AGW Industries - Update all references, URLs, and paths)
 );
 
