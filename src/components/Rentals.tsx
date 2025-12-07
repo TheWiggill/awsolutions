@@ -108,7 +108,7 @@ export function Rentals() {
             {/* Ozone Generator Image */}
             <div className="mt-8 text-center">
               <img 
-                src="/agwindustries/images/Ozone.png" 
+                src="/awsolutions/images/Ozone.png" 
                 alt="Ozone Generator" 
                 className="w-48 h-auto mx-auto rounded-2xl border border-emerald-900/30"
               />

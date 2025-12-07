@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 const CanadianFlag = () => (
   <img 
-    src="/agwindustries/images/Flag_of_Canada.svg" 
+    src="/awsolutions/images/Flag_of_Canada.svg" 
     alt="Canadian Flag" 
     width="24" 
     height="16" 

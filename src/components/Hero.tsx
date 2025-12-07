@@ -72,7 +72,7 @@ export function Hero() {
         <div className="text-center mt-8">
           <div className="flex items-center justify-center gap-2 text-emerald-400 mb-2">
             <img 
-              src="/agwindustries/images/Flag_of_Canada.svg" 
+              src="/awsolutions/images/Flag_of_Canada.svg" 
               alt="Canadian Flag" 
               width="24" 
               height="16" 
