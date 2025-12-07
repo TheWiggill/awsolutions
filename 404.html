@@ -2,19 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AGW Industries</title>
+    <title>Redirecting...</title>
     <script>
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
       var pathSegmentsToKeep = 1;
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        '/awsolutions/' + '?/' +
-        l.pathname.slice('/awsolutions/'.length).replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      
+      // Check if we're on the correct base path
+      if (l.pathname.startsWith('/awsolutions/')) {
+        // We're on the correct path, just redirect to index
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/awsolutions/' + '?/' +
+          l.pathname.slice('/awsolutions/'.length).replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      } else {
+        // We're not on the correct path, redirect to base
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/awsolutions/'
+        );
+      }
     </script>
   </head>
   <body>
