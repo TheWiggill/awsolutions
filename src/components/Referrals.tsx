@@ -60,7 +60,7 @@ export function Referrals() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Kelowna Drone Photography
+                  Matt Blair Photography
                 </h3>
                 <p className="text-gray-300 text-lg">
                   Professional photography & drone footage
@@ -70,7 +70,7 @@ export function Referrals() {
             
             <p className="text-gray-300 mb-6 leading-relaxed">
               Need a photographer or drone footage for your property (or anything else)? 
-              Matt at Kelowna Drone delivers stunning aerial and ground photography.
+              Matt at delivers stunning aerial and ground photography, including real estate photography.
             </p>
             
             <div className="flex items-center justify-center">

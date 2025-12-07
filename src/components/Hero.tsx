@@ -39,7 +39,7 @@ export function Hero() {
           </h1>
         </div>
         <p className="text-lg md:text-xl font-bold text-white mb-3 tracking-wide">
-          Design • Manufacturing • Tech • Rentals
+          Design • Manufacturing • Tech • Radio Comms • Rentals
         </p>
         <p className="text-xl md:text-2xl text-emerald-400 mb-8">
           Let's make it happen
