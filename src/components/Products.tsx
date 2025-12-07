@@ -30,16 +30,16 @@ const audioProducts: Product[] = [
 
 const radioProducts: Product[] = [
   {
-    name: 'Baofeng UV-16 V2 Pro',
-    price: '$80 CAD',
-    image: `${baseUrl}images/baofeng.jpg`,
-    description: 'Waterproof, USB-C Charging, Programmed to include ALL channels that you need, including RR, Load, Ladd, BCA, FRS/GMRS, Canadian Weather, and more. FM Radio and Flashlight functionality. Dock charger, USB C Cable, Antenna, and belt clip included.'
-  },
-  {
     name: 'Baofeng UV-5R Mini',
     price: '$60 CAD',
     image: `${baseUrl}images/uv5r-mini.jpg`,
     description: 'Compact radio, USB-C Charging, Programmed to include ALL channels that you need, including RR, Load, Ladd, BCA, FRS/GMRS, Canadian Weather, and more. FM Radio and Flashlight functionality. Charger, Antenna, and belt clip included.'
+  },
+  {
+    name: 'Baofeng UV-16 V2 Pro',
+    price: '$80 CAD',
+    image: `${baseUrl}images/baofeng.jpg`,
+    description: 'Waterproof, USB-C Charging, Programmed to include ALL channels that you need, including RR, Load, Ladd, BCA, FRS/GMRS, Canadian Weather, and more. FM Radio and Flashlight functionality. Dock charger, USB C Cable, Antenna, and belt clip included.'
   },
   {
     name: 'Baofeng UV-17 Pro with GPS',
