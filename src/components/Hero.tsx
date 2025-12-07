@@ -28,9 +28,19 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#1a472a_0%,#000000_100%)] opacity-90"></div>
       
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
-          AW Solutions
-        </h1>
+        <div className="flex flex-col items-start justify-center gap-4 mb-4 md:flex-row md:items-center md:justify-center">
+          <img 
+            src="images/sidehectortrans.png" 
+            alt="AGW Industries Logo" 
+            className="w-32 h-32 md:w-40 md:h-40"
+          />
+          <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight font-ancizar-serif text-left md:text-center">
+            AGW INDUSTRIES
+          </h1>
+        </div>
+        <p className="text-lg md:text-xl font-bold text-white mb-3 tracking-wide">
+          Design • Manufacturing • Tech • Radio Comms • Rentals
+        </p>
         <p className="text-xl md:text-2xl text-emerald-400 mb-8">
           Let's make it happen
         </p>
@@ -56,6 +66,26 @@ export function Hero() {
             Get in Touch
             <ChevronRight className="w-5 h-5" />
           </button>
+        </div>
+
+        {/* Proudly Canadian Section */}
+        <div className="text-center mt-8">
+          <div className="flex items-center justify-center gap-2 text-emerald-400 mb-2">
+            <img 
+              src="/awsolutions/images/Flag_of_Canada.svg" 
+              alt="Canadian Flag" 
+              width="24" 
+              height="16" 
+              className="inline-block"
+            />
+            <span className="text-lg font-semibold">Proudly Canadian</span>
+          </div>
+          <div className="flex items-center justify-center gap-2 text-emerald-400">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+            </svg>
+            <span>Kelowna, BC</span>
+          </div>
         </div>
       </div>
 
