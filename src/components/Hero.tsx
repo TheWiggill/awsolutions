@@ -35,11 +35,11 @@ export function Hero() {
             className="w-32 h-32 md:w-40 md:h-40"
           />
           <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight font-ancizar-serif text-left md:text-center">
-            AGW INDUSTRIES
+            WIGGLY'S WARES
           </h1>
         </div>
         <p className="text-lg md:text-xl font-bold text-white mb-3 tracking-wide">
-          Design • Manufacturing • Tech • Radio Comms • Rentals
+          Radios • 3D Printing • Design • Tech Support • Rentals
         </p>
         <p className="text-xl md:text-2xl text-emerald-400 mb-8">
           Let's make it happen
